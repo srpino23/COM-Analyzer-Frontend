@@ -1,0 +1,69 @@
+.deviceContainer .device {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #2c2c2c;
+  cursor: pointer;
+}
+
+.deviceContainer .device:hover {
+  background: #2c2c2c;
+}
+
+.deviceContainer .device .basicInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.deviceContainer .device .basicInfo .type {
+  width: 36.5px;
+  height: 36.5px;
+  background: #6d816e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.deviceContainer .device .basicInfo .type img {
+  width: 30px;
+  height: 30px;
+}
+
+.deviceContainer .device .basicInfo .name {
+  font-weight: bold;
+}
+
+.deviceContainer .device .basicInfo .deviceSubInfo {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  gap: 0.5rem;
+}
+
+.deviceContainer .device .state {
+  width: 36.5px;
+  height: 36.5px;
+  border-radius: 100%;
+}
+
+.deviceContainer .device .state.online {
+  background: var(--green);
+}
+
+.deviceContainer .device .state.offline {
+  background: var(--red);
+}
+
+.deviceContainer .device .state.warning {
+  background: var(--yellow);
+}
+
+.deviceContainer .device .state.maintenance {
+  background: var(--blue);
+}

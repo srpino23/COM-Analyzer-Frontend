@@ -1,0 +1,102 @@
+/* Basico */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color-scheme: light dark;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+/* Mapa */
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-attrib {
+  display: none !important;
+}
+
+.mapboxgl-popup {
+  width: 200px;
+}
+
+.mapboxgl-popup-content {
+  background: #0d0d0d;
+  border-radius: 0.5rem;
+}
+
+.popup-content {
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.popup-content h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #00ff7f;
+  text-align: center;
+}
+
+.popup-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.online {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #39ff14;
+}
+
+.warning {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #f7ff00;
+}
+
+.offline {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ff073a;
+}
+
+.maintenance {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #00aaff;
+}
+
+.popup-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  background: #00ff7f;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-link:hover {
+  background: #007239;
+}
+
+.mapboxgl-popup-close-button {
+  display: none;
+}

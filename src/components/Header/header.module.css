@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #00ff7f;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  max-width: 60px;
+  min-width: 60px;
+}
+
+.header .logo {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.header nav a,
+.header nav button {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative;
+  line-height: 0;
+}
+
+.header nav a:hover,
+.header nav button:hover {
+  color: var(--primary-color);
+}
+
+.header nav .active {
+  color: var(--primary-color);
+}
+
+.header nav .active::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: -18px;
+  height: 150%;
+  width: 3px;
+  border-radius: 10px 0 0 10px;
+  background-color: var(--primary-color);
+}
+
+.header nav .pages,
+.header nav .settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header nav .settings button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
