@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-mapboxgl.accessToken =
-  "pk.eyJ1Ijoic3JwaW5vMjMiLCJhIjoiY20weTJ2OW9rMGl2czJucHFnYzdnOXd0eCJ9.ROcEsj7ffoAr6alk-UCoFw";
+mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_API_URL;
 
 const GenerateMap = ({
   setDevice,
